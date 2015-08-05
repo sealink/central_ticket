@@ -24,6 +24,7 @@ public class Web {
 
   static final Logger logger = Logger.getLogger(Web.class.getName());
 
+  @SuppressWarnings("unchecked")
   public Web(WebConfig webconfig) {
 
     if (webconfig.isSecure()) {
