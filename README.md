@@ -13,7 +13,9 @@ See [sealink/ticket_printer](https://github.com/sealink/ticket_printer)
 
 ## Building
 
-* Eclipse:
+**Build Ticket Printer first, then**
+
+Eclipse:
 Run -> Run configurations -> Maven build -> New -> Set base directory and set goals to "clean install assembly:single"
 
 OR
@@ -23,6 +25,10 @@ Command-line Maven:
     cd central_ticket
     mvn clean install assembly:single
 
+
+All-in-one Maven rebuild with included back-end build:
+
+    pushd ../ticket_printer && mvn clean install && popd && mvn clean install assembly:single
 
 ## Running
 
