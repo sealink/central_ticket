@@ -17,8 +17,8 @@ import javax.print.PrintService;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
+import com.quicktravel.ticket_printer.PrintServiceLocator;
 import com.quicktravel.ticket_printer.TicketPrintCommand;
-import com.quicktravel.ticket_printer.printables.PrintServiceLocator;
 
 public class Web {
 
